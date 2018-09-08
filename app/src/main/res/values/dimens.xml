@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_it_corner">4dp</dimen>
+    <dimen name="btn_it_borderwidth">1dp</dimen>
+    <dimen name="time_picker_border">4dp</dimen>
+</resources>

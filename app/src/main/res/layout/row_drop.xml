@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_row_drop"
+    android:padding="24dp"
+    android:orientation="horizontal">
+    <ImageView
+
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@null"
+        android:id="@+id/dropImage"
+        android:src="@drawable/exam"/>
+    <TextView
+        android:paddingTop="3dp"
+        android:id="@+id/whatView"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        tools:text="What?"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/whenView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       tools:text="When?"/>
+
+</LinearLayout>

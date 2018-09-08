@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#34495e"
+    tools:context="com.ibrickedlabs.drops.MainActivity">
+
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_main"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+    <com.ibrickedlabs.drops.widgets.BucketRecycleView
+        android:layout_width="match_parent"
+        android:id="@+id/rv_drops"
+        android:layout_below="@id/toolbar_main"
+        android:layout_height="wrap_content"/>
+
+    <include
+        android:id="@+id/emptyDrops"
+        layout="@layout/empty_drops" />
+
+</RelativeLayout>

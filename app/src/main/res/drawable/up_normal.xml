@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+<shape>
+    <solid android:color="@color/btn_it_border">
+
+
+    </solid>
+    <size android:width="96dp"/>
+    <corners
+        android:topRightRadius="@dimen/time_picker_border"
+        android:topLeftRadius="@dimen/time_picker_border"/>
+</shape>
+    </item>
+    <item >
+        <bitmap android:src="@drawable/ic_up_normal"
+
+            android:gravity="center"/>
+
+    </item>
+
+</layer-list>

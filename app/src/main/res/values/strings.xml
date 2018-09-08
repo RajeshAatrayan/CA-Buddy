@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CA Buddy</string>
+    <string name="str_add_drop">Add an Exam</string>
+    <string name="set_the_day_before_time_to_get_notified">Set the day before time to get notified</string>
+</resources>

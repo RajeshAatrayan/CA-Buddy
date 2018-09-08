@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@android:color/transparent"></solid>
+            <size android:width="96dp"></size>
+            <corners
+                android:topRightRadius="@dimen/time_picker_border"
+                android:topLeftRadius="@dimen/time_picker_border"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_down_pressed"
+        android:gravity="center"></item>
+
+</layer-list>

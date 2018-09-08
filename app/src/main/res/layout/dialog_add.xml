@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialog_bg_color">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dialog_bg_color"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36dp"
+            android:layout_marginTop="36dp"
+            android:text="Add a Continuous assessment"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_Drop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:background="@drawable/bg_et_drop"
+            android:hint="Enter the Subject"
+            android:inputType="text"
+            android:padding="16dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/close_Button"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignBottom="@id/tv_title"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_title"
+            android:background="@null"
+            android:src="@drawable/ic_close" />
+
+        <com.ibrickedlabs.drops.widgets.BucketPickerView
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_Drop"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            android:id="@+id/remainderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/datePicker"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/set_the_day_before_time_to_get_notified"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TimePicker
+
+            android:id="@+id/timepicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/remainderText"
+
+            android:layout_centerHorizontal="true"
+
+            android:timePickerMode="spinner"
+
+
+            ></TimePicker>
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timepicker"
+            android:background="@drawable/btn_add_it_bg"
+            android:text="Add it"
+            android:textAllCaps="false"
+
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+</ScrollView>
+
